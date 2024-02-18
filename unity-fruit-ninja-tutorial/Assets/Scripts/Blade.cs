@@ -3,6 +3,7 @@ using UnityEngine;
 public class Blade : MonoBehaviour
 {
     public Vector3 direction { get; private set; }
+    public GameObject bladetrail
 
     private Camera mainCamera;
 
@@ -72,6 +73,13 @@ public class Blade : MonoBehaviour
         sliceCollider.enabled = velocity > minSliceVelocity;
 
         transform.position = newPosition;
+    }
+
+    private void BladeCompose()
+    {
+      Vector3 newPosition =  object.trail
+      direction = newPosition
+      
     }
 
 }
